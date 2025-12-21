@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formular</h1>
+    <form action="https://httpbin.org/post" method="get" enctype="multipart/form-data">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" placeholder=" Va rugam introduceti nume" required><br><br>
+
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" name="prenume"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="pass">Parola</label>
+        <input type="password" id="pass" name="pass" required><br><br>
+        <label for="poza"> Poza</label>
+        <input type="file" id="poza" name="poza"><br><br>
+        <label for="comentariu">Comentariu:</label><br>
+        <textarea id="comentariu" name="comentariu" rows="4" cols="50"></textarea><br><br>
+        <label> Alege orarul:</label><br>
+        <input type="radio" name="orar" id="orar1" value="varianta1">
+        <label for="orar1"> Varianta 1</label>
+        <input type="radio" name="orar" id="orar2" value="varianta2">
+        <label for="orar2"> Varianta 2</label><br>
+        <label for="materii"> Alege materiile:</label><br>
+        <select name="materii" id="materii">
+            <option value="mate">Matematica</option>
+            <option value="info">Informatica</option>
+            <option value="fizica">Fizica</option>
+            <option value="chimie">Chimie</option>
+        </select>
+        <br><br>
+        <label for="">Transport</label>
+        <input type="checkbox" name="transport[]" id="transport" value="da">
+        <label for="transport"> Am nevoie de transport</label><br><br>
+        <input type="checkbox" name="transport[]" id="metrou" value="da">
+        <label for="metrou"> Voi folosi metroul</label><br><br>
+
+
+        <input type="submit" value="Trimite">
+    </form>
+</body>
+
+</html>

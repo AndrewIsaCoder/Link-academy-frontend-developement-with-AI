@@ -1,0 +1,17 @@
+p:last-child{
+    color: aqua;
+}
+
+p:nth-child(2n):not(:last-child){
+    color: red;
+}
+
+p:nth-child(2n+1):not(:last-child):not(:first-child){
+    
+    color: orange;
+}
+
+p:first-child{
+    color: rgb(133, 21, 238);
+}
+

@@ -1,0 +1,37 @@
+section {
+  background-color: aqua;
+  color: red;
+  width: 200px;
+  height: 200px;
+  border: 5px dashed #04289b;
+}
+
+h1 {
+  color: #03083d;
+}
+#titlul2 {
+  color: #635d05;
+}
+
+.titlul3 {
+  color: #c111b0;
+}
+#titlul4 {
+  color: #106a7c;
+}
+.tit4 {
+  color: #fffd10; /*acest stil va fi suprascris de id titlul4*/
+}
+
+p {
+  color: aqua !important;
+}
+#p2 {
+  color: #e86022;
+}
+ol > li:nth-child(2n) {
+  color: red;
+}
+ol > li:nth-child(2n + 1) {
+  color: blueviolet;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ballet';
+    src: url('fonts/Ballet-Regular-VariableFontopsz.eot');
+    src: url('fonts/Ballet-Regular-VariableFontopsz.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Ballet-Regular-VariableFontopsz.woff2') format('woff2'),
+         url('fonts/Ballet-Regular-VariableFontopsz.woff') format('woff'),
+         url('fonts/Ballet-Regular-VariableFontopsz.ttf')  format('truetype'),
+         url('fonts/Ballet-Regular-VariableFontopsz.svg#Ballet') format('svg');
+}

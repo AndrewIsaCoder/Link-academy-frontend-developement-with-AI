@@ -1,0 +1,33 @@
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+}
+h1,
+h2 {
+  text-align: center;
+}
+p {
+  font-size: 18px !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#myid {
+  color: orange;
+  font-size: 22px;
+}
+div > p {
+  color: red;
+}
+div {
+  background-color: blue;
+}
+/* section p {
+  color: purple;
+} */
+.highlight p {
+  color: purple;
+}
+.myclass p {
+  font-size: 34px;
+}

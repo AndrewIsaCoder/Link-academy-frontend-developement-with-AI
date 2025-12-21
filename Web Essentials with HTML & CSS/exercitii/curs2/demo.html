@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <title>LinkAcademy</title>
+</head>
+
+<body>
+
+    <h1>Assignment - Crearea formularului de checkout</h1>
+
+    <form action="#" method="post" novalidate>
+
+        <!-- Address / Shipping -->
+        <fieldset>
+            <legend>Address</legend>
+
+            <h3>Shipping information</h3>
+
+            <label for="first-name">First Name *</label>
+            <input id="first-name" name="first-name" type="text" placeholder="First Name" required>
+            <label for="last-name">Last Name *</label>
+            <input id="last-name" name="last-name" type="text" placeholder="Last Name" required>
+            <br><br>
+
+            <label for="address">Address</label><br>
+            <input id="address" name="address" type="text" placeholder="Address">
+            <br><br>
+
+            <label for="apt">Apartment, suite, etc (optional)</label><br>
+            <input id="apt" name="apt" type="text" placeholder="Apartment, suite, etc (option)">
+            <br><br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="">Country</option>
+                <option>Romania</option>
+                <option>United States</option>
+                <option>Other</option>
+            </select>
+
+            <label for="city">City</label>
+            <select id="city" name="city">
+                <option value="">City</option>
+                <option>București</option>
+                <option>Cluj</option>
+                <option>Timișoara</option>
+            </select>
+
+            <label for="zip">Zipcode</label>
+            <input id="zip" name="zip" type="text" placeholder="Zipcode">
+            <br><br>
+
+            <label for="optional">Optional</label><br>
+            <input id="optional" name="optional" type="text" placeholder="Optional">
+            <br><br>
+
+            <label>
+                <input type="checkbox" name="save-contact"> Save contact information
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Payment -->
+        <fieldset>
+            <legend>Payment</legend>
+
+            <!-- PayPal/logo + Cash -->
+            <div>
+                <!-- imaginea folosește calea locală furnizată -->
+                <img src="./paypal.png" alt="PayPal / payment" width="120" height="120">
+                <button type="button">Cash</button>
+            </div>
+
+            <br>
+
+            <!-- Card details -->
+            <div>
+                <label for="card-name">Cardholder Name</label><br>
+                <input id="card-name" name="card-name" type="text" placeholder="Cardholder Name">
+                <br><br>
+
+                <label for="card-number">Card Number</label><br>
+                <input id="card-number" name="card-number" type="text" placeholder="Card Number">
+                <br><br>
+
+                <label for="exp-month">Month</label>
+                <select id="exp-month" name="exp-month">
+                    <option>Month</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+
+                <label for="exp-year">Year</label>
+                <select id="exp-year" name="exp-year">
+                    <option>Year</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                </select>
+
+                <label for="cvc">CVC</label>
+                <input id="cvc" name="cvc" type="text" placeholder="CVC">
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="save-card"> Save card data for future payments
+                </label>
+                <br><br>
+
+                <button type="submit">Pay with card</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
