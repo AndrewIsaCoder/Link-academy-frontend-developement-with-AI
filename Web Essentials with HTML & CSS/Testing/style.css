@@ -186,10 +186,15 @@ h1 {
   padding-left: 125px;
 }
 
-.social-media-icons{
+.social-media-icons {
   font-size: 20px;
 }
 
-.social-media{
+.social-media {
   padding-left: 32px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
 }
