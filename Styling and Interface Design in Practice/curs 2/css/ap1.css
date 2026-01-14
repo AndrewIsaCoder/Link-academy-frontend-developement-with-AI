@@ -1,0 +1,12 @@
+:root{
+    --myColor: #c4f025;
+    --myBackgroundColor: #ee1111 ; 
+}
+
+body{
+    background-color: var(--myBackgroundColor);
+}
+
+p{
+    color: var(--myColor);
+}
