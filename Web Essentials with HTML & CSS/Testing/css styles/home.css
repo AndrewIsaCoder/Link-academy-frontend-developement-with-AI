@@ -1,9 +1,16 @@
 .first-colored-background {
   background-color: #d6c9b1;
+  height: 400px;
 }
 
 .titlu-background {
   padding: 50px;
+}
+
+.paragraf-titlu-background{
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: large;
 }
 
 .brands-logos {
@@ -14,8 +21,52 @@
 }
 
 .brands-logos img {
+  margin-top: 70px;
   width: auto;
   height: 70px;
   max-width: 150px;
-  transition: 0.3s;
+  object-fit: contain;
+}
+
+
+/* Containerul care ține textul și logo-ul mare */
+.hero-container {
+  display: flex;
+  justify-content: space-between; /* Împinge textul la stânga și logo la dreapta */
+  align-items: center;           /* Le aliniază pe verticală */
+  max-width: 1200px;
+  margin: 0 auto;                /* Centrează conținutul pe pagină */
+  padding: 40px 20px;
+}
+
+.content-left {
+  flex: 1;                       /* Ocupă spațiul disponibil în stânga */
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;     /* Aliniază logo-ul la marginea din dreapta */
+}
+
+/* Stilul pentru logo-ul mare din fundal */
+.hero-logo-large {
+  max-width: 400px;              /* Ajustează dimensiunea după bunul plac */
+  height: auto;
+  opacity: 0.15;                 /* Îl face semi-transparent (ca un watermark) */
+  filter: grayscale(100%);       /* Opțional: îl face alb-negru pentru un look elegant */
+}
+
+/* Stil pentru logo-urile de branduri de jos */
+.brands-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0,0,0,0.1); /* Linie discretă deasupra */
+}
+
+.brands-logos img {
+  height: 30px;                  /* Ajustează înălțimea logo-urilor de brand */
+  filter: brightness(0);         /* Le face pe toate negre pentru uniformitate */
 }
