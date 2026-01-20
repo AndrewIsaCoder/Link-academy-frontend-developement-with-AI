@@ -1,7 +1,21 @@
-.first-colored-background{
-    background-color: #d6c9b1;
+.first-colored-background {
+  background-color: #d6c9b1;
 }
 
-.titlu-background{
-    padding: 50px;
+.titlu-background {
+  padding: 50px;
+}
+
+.brands-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+}
+
+.brands-logos img {
+  width: auto;
+  height: 70px;
+  max-width: 150px;
+  transition: 0.3s;
 }
