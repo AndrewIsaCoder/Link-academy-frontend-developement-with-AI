@@ -1,9 +1,10 @@
+COD HEADER :
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BugaLab Studio Login</title>
+    <title>BugaLab Studio Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +23,7 @@
     />
 
     <link rel="stylesheet" href="./css styles/login.css" />
+    <link rel="stylesheet" href="./css styles/home.css" />
   </head>
   <body>
     <header>
@@ -32,7 +34,7 @@
 
         <ul class="nav-links">
           <li><a href="./home.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="#">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#" id="reducere">Sale!</a></li>
@@ -45,75 +47,8 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <div class="container">
-        <h1>Create an Account</h1>
-        <br />
-
-        <div class="login-form">
-          <div class="input-group">
-            <label for="email">Email <span class="required">*</span></label>
-            <input
-              type="email"
-              class="input-group-singularity"
-              name="email"
-              placeholder=""
-            />
-          </div>
-
-          <div class="input-group">
-            <label for="password"
-              >Create a password <span class="required">*</span></label
-            >
-            <input
-              type="password"
-              class="input-group-singularity"
-              name="password"
-              placeholder=""
-            />
-            <span class="help-text"
-              >8-25 characters only 1 number 1 uppercase 1 lowercase</span
-            >
-          </div>
-
-          <div class="input-group">
-            <label for="birth"
-              >Date of birth <span class="required">*</span></label
-            >
-            <input
-              type="date"
-              id="birth"
-              name="birth-date"
-              class="input-group-singularity"
-            />
-          </div>
-
-          <div class="checkbox-container">
-            <div class="checkbox-group">
-              <input type="checkbox" name="promotions" id="promotions" />
-              <label for="promotions"
-                >I would like to receive personalized promotions</label
-              >
-            </div>
-
-            <div class="checkbox-group">
-              <input type="checkbox" name="terms" id="terms" />
-              <label for="terms"
-                >I agree and accept the
-                <a href="#">Terms and Conditions</a></label
-              >
-            </div>
-          </div>
-
-          <div class="button-group">
-            <button class="btn-create">CREATE AN ACCOUNT</button>
-            <button class="btn-back">BACK TO LOGIN</button>
-          </div>
-        </div>
-      </div>
-    </main>
-
+-------------------------------------------------------------------------------------------------------------------------------
+COD FOOTER:
     <footer>
       <div class="titles">
         <div class="footer-column">
