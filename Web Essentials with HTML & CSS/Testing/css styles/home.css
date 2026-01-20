@@ -42,7 +42,7 @@
 
 .brands-logos {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   margin-top: auto;
   padding: 20px 50px; /* 50px este egal cu padding-ul de la text ca să fie aliniate perfect pe margini */
@@ -81,7 +81,7 @@
 
 .arrival-card img {
   width: 100%;
-  height: 500px;
+  height: 800px;
   object-fit: cover;
   border-radius: 4px; /* Opțional, pentru margini ușor rotunjite */
 }
