@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BugaLab Studio Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/main-logo/logo-buga.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css styles/login.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="./home.html"><img src="./assets/main-logo/logo-buga.png" alt="logo" /></a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="reducere">Sale!</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <input type="text" placeholder="Search" id="navbar-input" />
+          <a href="./checkout.html"><i class="fa-solid fa-basket-shopping"></i></a>
+          <a href="./login.html"><i class="fa-solid fa-users"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Create an Account</h1>
+        <br />
+
+        <div class="login-form">
+          <div class="input-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input
+              type="email"
+              class="input-group-singularity"
+              name="email"
+              placeholder=""
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password"
+              >Create a password <span class="required">*</span></label
+            >
+            <input
+              type="password"
+              class="input-group-singularity"
+              name="password"
+              placeholder=""
+            />
+            <span class="help-text"
+              >8-25 characters only 1 number 1 uppercase 1 lowercase</span
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="birth"
+              >Date of birth <span class="required">*</span></label
+            >
+            <input
+              type="date"
+              id="birth"
+              name="birth-date"
+              class="input-group-singularity"
+            />
+          </div>
+
+          <div class="checkbox-container">
+            <div class="checkbox-group">
+              <input type="checkbox" name="promotions" id="promotions" />
+              <label for="promotions"
+                >I would like to receive personalized promotions</label
+              >
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms"
+                >I agree and accept the
+                <a href="#">Terms and Conditions</a></label
+              >
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button class="btn-create">CREATE AN ACCOUNT</button>
+            <button class="btn-back">BACK TO LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="titles">
+        <div class="footer-column">
+          <h3>SHOP</h3>
+          <br />
+          <ul>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Jackets</a></li>
+            <li><a href="#">Skirts</a></li>
+            <li><a href="#">Shoes & Bags</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sales & Offers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>INFORMATION</h3>
+          <br />
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Delivery and Return</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CUSTOMER SUPPORT</h3>
+          <br />
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>SOCIAL-MEDIA</h3>
+          <br />
+          <div class="social-media">
+            <ul>
+              <a class="social-media-icons" href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a class="social-media-icons" href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="social-media-icons" href="https://tiktok.com/"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

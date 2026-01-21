@@ -1,0 +1,160 @@
+.first-colored-background {
+  background-color: #FFF5ED;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.content-left {
+  flex: 1;
+}
+
+.titlu-background {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.paragraf-titlu-background {
+  margin: 0;
+  font-size: large;
+  max-width: 500px;
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-logo-large {
+  max-width: 400px;
+  height: auto;
+  opacity: 0.2;
+  padding-right: 200px;
+}
+
+.brands-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px 50px; /* 50px este egal cu padding-ul de la text ca să fie aliniate perfect pe margini */
+}
+
+.brands-logos img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.new-arrivals {
+  padding: 60px 50px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.arrivals-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.arrival-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrival-card img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 4px; /* Opțional, pentru margini ușor rotunjite */
+}
+
+.arrival-btn {
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  transition: background-color 0.3s;
+}
+
+.arrival-btn:hover {
+  background-color: #444;
+}
+
+.offer-section {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.offer-images {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.image-half {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.left-img {
+  background-image: url('./assets/couple-fall.jpg');
+}
+
+.right-img {
+  background-image: url('./assets/kids-fall.jpg');
+}
+
+.offer-bar {
+  background-color: #e8ddd1; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.offer-text {
+  color: #e63946;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.show-all-btn {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.show-all-btn:hover {
+  transform: scale(1.05);
+}

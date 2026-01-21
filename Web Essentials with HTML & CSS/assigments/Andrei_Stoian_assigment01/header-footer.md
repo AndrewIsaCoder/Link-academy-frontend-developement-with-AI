@@ -1,0 +1,107 @@
+COD HEADER :
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BugaLab Studio Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/main-logo/logo-buga.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css styles/login.css" />
+    <link rel="stylesheet" href="./css styles/home.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="./home.html"><img src="./assets/main-logo/logo-buga.png" alt="logo" /></a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="reducere">Sale!</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <input type="text" placeholder="Search" id="navbar-input" />
+          <i class="fa-solid fa-basket-shopping"></i>
+          <a href="./login.html"><i class="fa-solid fa-users"></i></a>
+        </div>
+      </nav>
+    </header>
+-------------------------------------------------------------------------------------------------------------------------------
+COD FOOTER:
+    <footer>
+      <div class="titles">
+        <div class="footer-column">
+          <h3>SHOP</h3>
+          <br />
+          <ul>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Jackets</a></li>
+            <li><a href="#">Skirts</a></li>
+            <li><a href="#">Shoes & Bags</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sales & Offers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>INFORMATION</h3>
+          <br />
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Delivery and Return</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CUSTOMER SUPPORT</h3>
+          <br />
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>SOCIAL-MEDIA</h3>
+          <br />
+          <div class="social-media">
+            <ul>
+              <a class="social-media-icons" href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a class="social-media-icons" href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="social-media-icons" href="https://tiktok.com/"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
