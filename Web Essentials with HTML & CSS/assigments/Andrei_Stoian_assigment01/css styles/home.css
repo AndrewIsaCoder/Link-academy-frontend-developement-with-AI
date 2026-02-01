@@ -1,3 +1,11 @@
+html{
+  font-size: 16px;
+}
+body{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .first-colored-background {
   background-color: #FFF5ED;
   min-height: 450px;
@@ -157,4 +165,42 @@
 
 .show-all-btn:hover {
   transform: scale(1.05);
+}
+
+
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.5rem; }
+p { font-size: 1rem; }
+.current-price { font-size: 1.6rem; } 
+.add-to-cart { 
+    font-size: 1.2rem; 
+    min-height: 44px; 
+}
+
+
+@media screen and (min-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  .current-price { font-size: 1.4rem; }
+  .add-to-cart { font-size: 1.1rem; }
+}
+
+
+@media screen and (min-width: 1024px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+  .current-price { font-size: 1.4rem; }
+  .add-to-cart { font-size: 1rem; }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.first-colored-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
