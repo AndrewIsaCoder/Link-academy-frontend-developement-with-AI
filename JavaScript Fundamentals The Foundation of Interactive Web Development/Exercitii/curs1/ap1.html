@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body onload="alert('Salut Javascript!')">
-    <script>
-        alert("Mesaj din head!");
-    </script>
+  <body>
     <h1>Javascript</h1>
-    <p>
+    <p id="test" style="  color:red;">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
       blanditiis incidunt necessitatibus molestiae fuga corrupti modi ipsa
       dignissimos est odio nobis accusamus magni saepe consequuntur error
       consectetur ducimus dolor quibusdam!
     </p>
+    <script>
+      document.write(
+        '<h1 style="color: red;">Cod generat din Javascript </h1>',
+      );
+      document.write(
+        '<h2 style="color: red;">Cod generat din Javascript </h2>',
+      );
+      document.write(
+        '<h3 style="color: red;">Cod generat din Javascript </h3>',
+      );
+      document.write(
+        '<h4 style="color: red;">Cod generat din Javascript </h4>',
+      );
+      document.getElementById("test").innerHTML = "Modificat din Javascript"
+      document.getElementById("test").style.color = "blue"
+    </script>
   </body>
 </html>
