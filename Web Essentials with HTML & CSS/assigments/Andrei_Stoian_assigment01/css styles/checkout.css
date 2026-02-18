@@ -138,3 +138,92 @@
     border-top: 2px solid #000;
 }
 
+        :root {
+            --bg-crem: #fff5ed;
+            --accent-color: #f89d6d;
+            --dark-main: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fdfdfd;
+            color: var(--dark-main);
+        }
+
+        /* Navigație */
+        .navbar {
+            background-color: #d6c9b1 !important; /* Păstrăm culoarea ta din header-footer.css */
+            border-bottom: 2px solid #000;
+        }
+
+        /* Stil Input-uri Personalizat */
+        .form-control, .form-select {
+            background-color: var(--bg-crem) !important;
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #fff !important;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(248, 157, 109, 0.15);
+        }
+
+        /* Carduri Design */
+        .card-checkout {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .product-img {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* Butoane */
+        .btn-pay {
+            background-color: var(--dark-main);
+            color: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: transform 0.2s;
+        }
+
+        .btn-pay:hover {
+            background-color: #333;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f9f9f9;
+            padding: 60px 0 20px;
+            border-top: 1px solid #eee;
+            margin-top: 80px;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #808080;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover { color: #000; }
+
+        /* Responsive Fixes */
+        @media (max-width: 991px) {
+            .sticky-column { position: static !important; }
+            .order-summary-card { margin-bottom: 30px; }
+        }
