@@ -1,157 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BugaLab Studio Login</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back - BugaLab Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css styles/login.css">
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="shortcut icon"
-      href="./assets/main-logo/logo-buga.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css styles/login.css" />
-    <link rel="stylesheet" href="./css styles/header-footer.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="./home.html"
-            ><img src="./assets/main-logo/logo-buga.png" alt="logo"
-          /></a>
+    <div class="login-container">
+        <div class="left-panel">
+            <div class="quote-top">A WISE QOUTE <span class="line"></span></div>
+            <div class="quote-bottom">
+                <h1>GET<br>EVERYTHING<br>YOU WANT.</h1>
+            </div>
         </div>
 
-        <ul class="nav-links">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" id="reducere">Sale!</a></li>
-        </ul>
+        <div class="right-panel">
+            <div class="logo">
+                <div class="logo-icon">B</div>
+                <span>BugaLab Studio</span>
+            </div>
 
-        <div class="nav-actions">
-          <input type="text" placeholder="Search" id="navbar-input" />
-          <a href="./checkout.html"
-            ><i class="fa-solid fa-basket-shopping"></i
-          ></a>
-          <a href="./login.html"><i class="fa-solid fa-users"></i></a>
+            <div class="welcome-text">
+                <h2>Welcome back</h2>
+                <p>Enter your email and password to access<br>your account.</p>
+            </div>
+
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Enter your password">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password</a>
+                </div>
+
+                <button type="submit" class="btn-primary">Sign In</button>
+                <button type="button" class="btn-google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="google-logo">
+                    Sign In with Google
+                </button>
+            </form>
         </div>
-      </nav>
-    </header>
-
-    <main class="container d-flex justify-content-center align-items-center py-5" style="min-height: 80vh;">
-  <div class="row w-100 justify-content-center">
-    <div class="col-12 col-md-8 col-lg-4">
-      
-      <h1 class="text-center mb-4 fw-bold" style="font-size: 1.8rem;">Create an Account</h1>
-      
-      <div class="login-form bg-white p-4 border rounded shadow-sm">
-        <form>
-          <div class="mb-3">
-            <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="password" class="form-label fw-semibold">Create a password <span class="text-danger">*</span></label>
-            <input type="password" class="form-control" id="password" required>
-            <div class="form-text" style="font-size: 0.75rem;">8-25 characters: 1 number, 1 uppercase, 1 lowercase</div>
-          </div>
-
-          <div class="mb-3">
-            <label for="birth" class="form-label fw-semibold">Date of birth <span class="text-danger">*</span></label>
-            <input type="date" class="form-control" id="birth" required>
-          </div>
-
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="promotions">
-            <label class="form-check-label" for="promotions">I would like to receive personalized promotions</label>
-          </div>
-
-          <div class="mb-4 form-check">
-            <input type="checkbox" class="form-check-input" id="terms" required>
-            <label class="form-check-label" for="terms">I agree and accept the <a href="#" class="text-decoration-none text-primary">Terms and Conditions</a></label>
-          </div>
-
-          <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-dark py-2 fw-bold">CREATE AN ACCOUNT</button>
-            <button type="button" class="btn btn-outline-secondary py-2">BACK TO LOGIN</button>
-          </div>
-        </form>
-      </div>
-
     </div>
-  </div>
-</main>
 
-    <footer>
-      <div class="titles">
-        <div class="footer-column">
-          <h3>SHOP</h3>
-          <br />
-          <ul>
-            <li><a href="#">Dresses</a></li>
-            <li><a href="#">Jackets</a></li>
-            <li><a href="#">Skirts</a></li>
-            <li><a href="#">Shoes & Bags</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Sales & Offers</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>INFORMATION</h3>
-          <br />
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Delivery and Return</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>CUSTOMER SUPPORT</h3>
-          <br />
-          <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>SOCIAL-MEDIA</h3>
-          <br />
-          <div class="social-media">
-            <ul>
-              <a class="social-media-icons" href="https://facebook.com/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a class="social-media-icons" href="https://instagram.com/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a class="social-media-icons" href="https://tiktok.com/"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>
