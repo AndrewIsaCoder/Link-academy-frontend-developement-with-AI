@@ -198,3 +198,11 @@ h1 {
   width: 18px;
   height: 18px;
 }
+
+.navbar {
+  background-color: #ffffff; 
+  border-bottom: 1px solid #eee;
+}
+.navbar a {
+  color: #000000; 
+}
