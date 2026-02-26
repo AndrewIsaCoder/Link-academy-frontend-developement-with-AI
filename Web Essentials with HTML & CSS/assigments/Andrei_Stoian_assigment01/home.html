@@ -1,152 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BugaLab Studio Home</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BugaLab Studio - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./assets/main-logo/logo-buga.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css styles/home.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./home.html">
+          <img src="./assets/main-logo/logo-buga.png" alt="BugaLab Logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./home.html" class="active">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="sale-link">Sale!</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+        <a href="./checkout.html" class="icon-btn"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a href="./login.html" class="icon-btn"><i class="fa-regular fa-user"></i></a>
+      </div>
+    </nav>
+  </header>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="shortcut icon"
-      href="./assets/main-logo/logo-buga.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-subtitle">New Collection</span>
+          <h1 class="hero-title">Discover Brands</h1>
+          <p class="hero-description">
+            Discover a collection that blends style and comfort. Browse our carefully
+            selected pieces of modern clothing that follows the latest trends
+            while staying true to your unique style.
+          </p>
+          <a href="./shop.html" class="btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-visual">
+          <img src="./assets/main-logo/logo-buga.png" class="hero-logo-large" alt="BugaLab Background Logo">
+        </div>
+      </div>
+      
+      <div class="brands-banner">
+        <div class="brands-logos">
+          <img src="./assets/brands logo/bershka-transparent.png" alt="Bershka">
+          <img src="./assets/brands logo/hm-transparent.png" alt="H&M">
+          <img src="./assets/brands logo/zara-transparent.png" alt="Zara">
+          <img src="./assets/brands logo/nike-transparent.png" alt="Nike">
+        </div>
+      </div>
+    </section>
 
-    <link rel="stylesheet" href="./css styles/login.css" />
-    <link rel="stylesheet" href="./css styles/home.css" />
-    <link rel="stylesheet" href="./css styles/header-footer.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="./home.html"><img src="./assets/main-logo/logo-buga.png" alt="logo" /></a>
+    <section class="new-arrivals">
+      <div class="section-header">
+        <h2 class="section-title">New Arrivals</h2>
+        <a href="./shop.html" class="view-all-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="arrivals-container">
+        <div class="arrival-card">
+          <div class="arrival-img-wrapper">
+            <img src="./assets/new arrival photos/woman-arrivals.jpg" alt="Women Fashion">
+          </div>
+          <div class="arrival-overlay">
+            <button class="arrival-btn">Women's Collection</button>
+          </div>
         </div>
 
-        <ul class="nav-links">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" id="reducere">Sale!</a></li>
-        </ul>
-
-        <div class="nav-actions">
-          <input type="text" placeholder="Search" id="navbar-input" />
-          <a href="./checkout.html"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a href="./login.html"><i class="fa-solid fa-users"></i></a>
-        </div>
-      </nav>
-    </header>
-<!-- ------------------------------------------------------------------ -->
-<div class="first-colored-background">
-  
-  <div class="hero-container">
-    <div class="content-left">
-      <h1 class="titlu-background">Discover Brands</h1>
-      <p class="paragraf-titlu-background">
-        Discover a collection that blends style and comfort. Browse our carefully
-        selected pieces of modern clothing that follows the latest trends
-        while staying true to your unique style.
-      </p>
-    </div>
-
-    <div class="content-right">
-      <img src="./assets/main-logo/logo-buga.png" class="hero-logo-large" alt="Logo Fundal">
-    </div>
-  </div>
-
-  <div class="brands-logos">
-    <img src="./assets/brands logo/bershka-transparent.png" alt="bershka">
-    <img src="./assets/brands logo/hm-transparent.png" alt="hm">
-    <img src="./assets/brands logo/zara-transparent.png" alt="zara">
-    <img src="./assets/brands logo/nike-transparent.png" alt="nike">
-  </div>
-
-</div>
-<section class="new-arrivals">
-  <h2 class="section-title">New Arrivals</h2>
-  
-  <div class="arrivals-container">
-    <div class="arrival-card">
-      <img src="./assets/new arrival photos/woman-arrivals.jpg" alt="Women Fashion">
-      <button class="arrival-btn">Women</button>
-    </div>
-
-    <div class="arrival-card">
-      <img src="./assets/new arrival photos/kids-arrivals.jpg" alt="Kids Fashion">
-      <button class="arrival-btn">Kids</button>
-    </div>
-
-    <div class="arrival-card">
-      <img src="./assets/new arrival photos/man-arrivals.jpg" alt="Men Fashion">
-      <button class="arrival-btn">Men</button>
-    </div>
-  </div>
-</section>
-<!-- ------------------------------------------------------------------ -->
-    <footer>
-      <div class="titles">
-        <div class="footer-column">
-          <h3>SHOP</h3>
-          <br />
-          <ul>
-            <li><a href="#">Dresses</a></li>
-            <li><a href="#">Jackets</a></li>
-            <li><a href="#">Skirts</a></li>
-            <li><a href="#">Shoes & Bags</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Sales & Offers</a></li>
-          </ul>
+        <div class="arrival-card">
+          <div class="arrival-img-wrapper">
+            <img src="./assets/new arrival photos/kids-arrivals.jpg" alt="Kids Fashion">
+          </div>
+          <div class="arrival-overlay">
+            <button class="arrival-btn">Kids' Collection</button>
+          </div>
         </div>
 
-        <div class="footer-column">
-          <h3>INFORMATION</h3>
-          <br />
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Delivery and Return</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>CUSTOMER SUPPORT</h3>
-          <br />
-          <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>SOCIAL-MEDIA</h3>
-          <br />
-          <div class="social-media">
-            <ul>
-              <a class="social-media-icons" href="https://facebook.com/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a class="social-media-icons" href="https://instagram.com/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a class="social-media-icons" href="https://tiktok.com/"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-            </ul>
+        <div class="arrival-card">
+          <div class="arrival-img-wrapper">
+            <img src="./assets/new arrival photos/man-arrivals.jpg" alt="Men Fashion">
+          </div>
+          <div class="arrival-overlay">
+            <button class="arrival-btn">Men's Collection</button>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="special-offer">
+      <div class="offer-images">
+        <div class="image-half left-img"></div>
+        <div class="image-half right-img"></div>
+      </div>
+      <div class="offer-bar">
+        <div class="offer-content">
+          <h3 class="offer-text">Fall Season Sale - Up to 50% Off</h3>
+          <p class="offer-subtext">Upgrade your autumn wardrobe with our exclusive deals.</p>
+        </div>
+        <button class="show-all-btn">Discover Offers</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column brand-col">
+        <img src="./assets/main-logo/logo-buga.png" alt="BugaLab Studio" class="footer-logo">
+        <p>Creating elegant and timeless fashion pieces for the modern individual.</p>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#">Dresses</a></li>
+          <li><a href="#">Jackets</a></li>
+          <li><a href="#">Skirts</a></li>
+          <li><a href="#">Shoes & Bags</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Delivery & Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Size Guide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BugaLab Studio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
