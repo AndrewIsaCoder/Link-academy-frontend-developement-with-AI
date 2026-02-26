@@ -1,65 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Back - BugaLab Studio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./css styles/login.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BugaLab Studio - Login</title>
+    <link rel="stylesheet" href="./css styles/login.css" />
+  </head>
+  <body>
+    <img src="./assets/login background.jpg" alt="" class="background-image" />
 
     <div class="login-container">
-        <div class="left-panel">
-            <div class="quote-top">A WISE QOUTE <span class="line"></span></div>
-            <div class="quote-bottom">
-                <h1>GET<br>EVERYTHING<br>YOU WANT.</h1>
-            </div>
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <img
+          src="./assets/login background.jpg"
+          alt="Abstract colorful waves"
+          class="left-panel-image"
+        />
+
+        <div class="quote-header">
+          <span class="quote-text">A WISE QOUTE</span>
+          <div class="quote-dividers">
+            <div class="divider"></div>
+            <div class="divider"></div>
+          </div>
         </div>
 
-        <div class="right-panel">
-            <div class="logo">
-                <div class="logo-icon">B</div>
-                <span>BugaLab Studio</span>
-            </div>
+        <p class="motivational-text">
+          GET<br />
+          EVERYTHING<br />
+          YOU WANT.
+        </p>
+      </div>
 
-            <div class="welcome-text">
-                <h2>Welcome back</h2>
-                <p>Enter your email and password to access<br>your account.</p>
-            </div>
-
-            <form class="login-form">
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email">
-                </div>
-
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="password" placeholder="Enter your password">
-                        <i class="fa-regular fa-eye"></i>
-                    </div>
-                </div>
-
-                <div class="form-actions">
-                    <div class="remember-me">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Remember me</label>
-                    </div>
-                    <a href="#" class="forgot-password">Forgot Password</a>
-                </div>
-
-                <button type="submit" class="btn-primary">Sign In</button>
-                <button type="button" class="btn-google">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="google-logo">
-                    Sign In with Google
-                </button>
-            </form>
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <!-- Logo -->
+        <div class="logo-container">
+          <img
+            src="./assets/main-logo/logo-buga.png"
+            alt="BugaLab Studio logo"
+            class="logo-img"
+          />
+          <span class="logo-text">BugaLab Studio</span>
         </div>
+
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+          <h1 class="welcome-title">Welcome back</h1>
+          <p class="welcome-subtitle">
+            Enter your email and password to access your account.
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form class="form-container">
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-input"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <div class="password-container">
+              <input
+                type="password"
+                id="password"
+                class="form-input password-input"
+                placeholder="Enter your password"
+                required
+              />
+              <svg
+                class="eye-icon"
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_eye)">
+                  <path
+                    d="M1.08337 12.5C1.08337 12.5 5.41671 4.16669 13 4.16669C20.5834 4.16669 24.9167 12.5 24.9167 12.5C24.9167 12.5 20.5834 20.8334 13 20.8334C5.41671 20.8334 1.08337 12.5 1.08337 12.5Z"
+                    stroke="#1E1E1E"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13 15.625C14.795 15.625 16.25 14.2259 16.25 12.5C16.25 10.7741 14.795 9.37502 13 9.37502C11.2051 9.37502 9.75004 10.7741 9.75004 12.5C9.75004 14.2259 11.2051 15.625 13 15.625Z"
+                    stroke="#1E1E1E"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_eye">
+                    <rect width="26" height="25" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Remember Me / Forgot Password -->
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-custom"></span>
+              Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot Password</a>
+          </div>
+
+          <!-- Sign In Button -->
+          <button type="submit" class="sign-in-btn">Sign In</button>
+
+          <!-- Sign In with Google Button -->
+          <button type="button" class="sign-in-google-btn">
+            <img
+              src="./assets/google icon for sign in with google.png"
+              alt="Google"
+              class="google-icon"
+            />
+            Sign In with Google
+          </button>
+        </form>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

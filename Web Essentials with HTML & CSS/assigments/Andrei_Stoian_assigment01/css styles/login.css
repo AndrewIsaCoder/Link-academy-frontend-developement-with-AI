@@ -1,257 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    /* Fundalul albastru deschis al paginii */
-    background-color: #d1e5f7; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 .login-container {
-    display: flex;
-    background: #ffffff;
-    width: 100%;
-    max-width: 950px;
-    border-radius: 40px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-    padding: 12px; /* Spațiu mic interior pentru a emula designul */
-    min-height: 600px;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  background: white;
+  border-radius: 48px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  display: flex;
+  min-height: 600px;
 }
 
-/* --- Partea Stângă --- */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+}
+
 .left-panel {
-    flex: 1;
-    /* Aici poți înlocui gradientul cu imaginea ta folosind: 
-       background: url('calea/catre/imagine.jpg') center/cover no-repeat; */
-    background: linear-gradient(135deg, #8dc3f7 0%, #dcf0f9 30%, #f6cb81 65%, #3094f0 100%);
-    border-radius: 30px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 30px;
+  border-radius: 48px;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.quote-top {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.5px;
+.left-panel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 48px;
+  padding: 10px;
 }
 
-.quote-top .line {
-    display: inline-block;
-    width: 35px;
-    height: 1px;
-    background-color: #1a1a1a;
-    margin-left: 10px;
+.quote-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.quote-bottom h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: #ffffff;
-    text-shadow: 0px 4px 15px rgba(0,0,0,0.15); /* Umbră ușoară pentru a citi clar textul */
+.quote-text {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
 }
 
-/* --- Partea Dreaptă --- */
+.quote-dividers {
+  display: flex;
+  gap: 8px;
+}
+
+.divider {
+  width: 48px;
+  height: 2px;
+  background: #000;
+}
+
+.motivational-text {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
 .right-panel {
-    flex: 1.1;
-    padding: 40px 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 50px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
 }
 
-.logo-icon {
-    background-color: #3b82f6;
-    color: white;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 14px;
+.logo-img {
+  width: 48px;
+  height: 32px;
+  object-fit: contain;
 }
 
-.logo span {
-    font-size: 15px;
-    color: #333;
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
 }
 
-.welcome-text {
-    text-align: center;
-    margin-bottom: 35px;
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.welcome-text h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    color: #111;
-    font-weight: 600;
-    margin-bottom: 8px;
+.welcome-title {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 16px;
 }
 
-.welcome-text p {
-    font-size: 13px;
-    color: #666;
-    line-height: 1.6;
+.welcome-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    max-width: 360px;
-    margin: 0 auto;
-    width: 100%;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.input-group label {
-    font-size: 12px;
-    color: #333;
-    font-weight: 500;
+.form-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
 }
 
-.input-group input {
-    padding: 14px 16px;
-    border: none;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    outline: none;
-    transition: background 0.3s;
+.form-input {
+  width: 100%;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+  transition: all 0.3s ease;
 }
 
-.input-group input::placeholder {
-    color: #aaa;
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.input-group input:focus {
-    background-color: #ebebeb;
+.form-input:focus {
+  background-color: #f3f3f3;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
 
-.password-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.password-wrapper input {
-    width: 100%;
-    padding-right: 45px;
+.password-input {
+  width: 100%;
+  padding-right: 50px;
 }
 
-.password-wrapper i {
-    position: absolute;
-    right: 16px;
-    color: #111;
-    cursor: pointer;
-    font-size: 14px;
+.eye-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
 }
 
-.form-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 11px;
-    margin-top: -5px;
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  gap: 16px;
 }
 
-.remember-me {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #555;
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #000;
+  user-select: none;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #020202;
+  border-radius: 3px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background-color: #000;
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+  content: "✓";
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.checkbox-input:hover + .checkbox-custom {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .forgot-password {
-    color: #555;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
 }
 
-.btn-primary {
-    background-color: #050505;
-    color: #ffffff;
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    margin-top: 5px;
-    transition: background 0.3s;
+.forgot-password:hover {
+  text-decoration: underline;
 }
 
-.btn-primary:hover {
-    background-color: #222;
+.sign-in-btn {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.btn-google {
-    background-color: #ffffff;
-    color: #333;
-    padding: 13px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
+.sign-in-btn:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.sign-in-btn:active {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.sign-in-google-btn {
+  width: 100%;
+  background-color: white;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.sign-in-google-btn:hover {
+  background-color: #f9f9f9;
+}
+
+.sign-in-google-btn:active {
+  background-color: #f0f0f0;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .login-container {
+    min-height: 920px;
+    border-radius: 70px;
+  }
+
+  .left-panel {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    transition: background 0.3s;
+    width: 50%;
+    min-height: auto;
+    padding: 60px 40px;
+    border-radius: 70px;
+  }
+
+  .left-panel-image {
+    border-radius: 70px;
+  }
+
+  .quote-text {
+    font-size: 32px;
+  }
+
+  .divider {
+    width: 64px;
+  }
+
+  .motivational-text {
+    font-size: 64px;
+  }
+
+  .right-panel {
+    flex: 1;
+    padding: 60px 80px;
+  }
+
+  .logo-img {
+    width: 56px;
+    height: 36px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .welcome-section {
+    margin-bottom: 60px;
+  }
+
+  .welcome-title {
+    font-size: 64px;
+  }
+
+  .welcome-subtitle {
+    font-size: 18px;
+  }
+
+  .form-container {
+    gap: 30px;
+  }
+
+  .form-label {
+    font-size: 18px;
+  }
+
+  .form-input {
+    padding: 18px 24px;
+    font-size: 16px;
+  }
+
+  .sign-in-btn,
+  .sign-in-google-btn {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .eye-icon {
+    width: 26px;
+    height: 25px;
+  }
 }
 
-.btn-google:hover {
-    background-color: #f9f9f9;
-}
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .right-panel {
+    padding: 80px 100px;
+  }
 
-.google-logo {
-    width: 18px;
-    height: 18px;
-}
-
-/* Responsivitate pentru ecrane mai mici */
-@media (max-width: 768px) {
-    .login-container {
-        flex-direction: column;
-    }
-    .left-panel {
-        min-height: 280px;
-    }
-    .right-panel {
-        padding: 30px 20px;
-    }
+  .form-container {
+    max-width: 520px;
+  }
 }
