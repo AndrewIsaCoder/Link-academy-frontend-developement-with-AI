@@ -1,164 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BugaLab Studio Home</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="./assets/main-logo/logo-buga.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-
-  <link rel="stylesheet" href="./css styles/login.css" />
-  <link rel="stylesheet" href="./css styles/home.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BugaLab Studio - Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./assets/main-logo/logo-buga.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./css styles/shop.css">
-  <link rel="stylesheet" href="./css styles/header-footer.css">
 </head>
-
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">
         <a href="./home.html">
-          <img src="./assets/main-logo/logo-buga.png" alt="logo" />
+          <img src="./assets/main-logo/logo-buga.png" alt="BugaLab Logo">
         </a>
       </div>
-
       <ul class="nav-links">
         <li><a href="./home.html">Home</a></li>
-        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./shop.html" class="active">Shop</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#" id="reducere">Sale!</a></li>
+        <li><a href="#" class="sale-link">Sale!</a></li>
       </ul>
-
       <div class="nav-actions">
-        <input type="text" placeholder="Search" id="navbar-input" />
-        <a href="./checkout.html"><i class="fa-solid fa-basket-shopping"></i></a>
-        <a href="./login.html"><i class="fa-solid fa-users"></i></a>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+        <a href="./checkout.html" class="icon-btn"><i class="fa-solid fa-basket-shopping"></i></a>
+        <a href="./login.html" class="icon-btn"><i class="fa-regular fa-user"></i></a>
       </div>
     </nav>
   </header>
 
   <main class="products-page">
     <div class="container">
-      <nav class="breadcrumbs">Home > Shop > <span>View All</span></nav>
+      <nav class="breadcrumbs">
+        <a href="#">Home</a> <i class="fa-solid fa-angle-right"></i> 
+        <a href="#">Shop</a> <i class="fa-solid fa-angle-right"></i> 
+        <span>View All</span>
+      </nav>
 
-      <h1 class="main-title">View All Products</h1>
+      <div class="page-header">
+        <h1 class="main-title">Discover Our Collection</h1>
+        <p class="subtitle">Embrace your style with our carefully curated pieces.</p>
+      </div>
 
       <div class="products-layout">
         <aside class="filters-sidebar">
-          <h3>Filters</h3>
-
-          <div class="filter-group">
-            <p class="filter-label">
-              Price <i class="fa-solid fa-chevron-right"></i>
-            </p>
+          <div class="filter-header">
+            <h3>Refine By</h3>
+            <button class="clear-btn">Clear All</button>
           </div>
 
           <div class="filter-group">
-            <p class="filter-label">
-              Brand <i class="fa-solid fa-chevron-down"></i>
-            </p>
-            <label><input type="checkbox" checked /> Zara</label>
-            <label><input type="checkbox" /> H&M</label>
-            <label><input type="checkbox" /> BERSHKA</label>
-            <label><input type="checkbox" /> KOTON</label>
+            <p class="filter-label">Price <i class="fa-solid fa-plus"></i></p>
           </div>
 
           <div class="filter-group">
-            <p class="filter-label">
-              Categories <i class="fa-solid fa-chevron-down"></i>
-            </p>
-            <label><input type="checkbox" /> Fleece</label>
-            <label><input type="checkbox" /> Sweaters</label>
-            <label><input type="checkbox" /> Shirts</label>
-            <label><input type="checkbox" checked /> All items</label>
+            <p class="filter-label">Brand <i class="fa-solid fa-minus"></i></p>
+            <div class="checkbox-list">
+              <label class="custom-checkbox">
+                <input type="checkbox" checked>
+                <span class="checkmark"></span> Zara
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span> H&M
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span> BERSHKA
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span> KOTON
+              </label>
+            </div>
           </div>
 
+          <div class="filter-group">
+            <p class="filter-label">Categories <i class="fa-solid fa-minus"></i></p>
+            <div class="checkbox-list">
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span> Fleece
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span> Sweaters
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span> Shirts
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" checked>
+                <span class="checkmark"></span> All items
+              </label>
+            </div>
+          </div>
           <button class="apply-filters-btn">Apply Filters</button>
         </aside>
 
         <section class="products-grid-container">
           <div class="grid-header">
-            <span>Showing 13-24 of 312 Products</span>
+            <span class="results-count">Showing 13-24 of 312 Products</span>
             <div class="sort-by">
-              Sort by: <strong>Most Popular</strong>
-              <i class="fa-solid fa-chevron-down"></i>
+              <select>
+                <option>Most Popular</option>
+                <option>Newest Arrivals</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+              </select>
             </div>
           </div>
 
-<div class="products-grid">
-  <div class="product-card">
-    <div class="product-img">
-      <img src="#" alt="Wool Blazer" />
-      <span class="badge-sale">SALE</span>
-    </div>
-    <div class="product-info">
-      <h4>Wool Blazer</h4>
-      <div class="price-row">
-        <span class="current-price">$50</span>
-        <span class="old-price">$55</span>
-        <span class="discount-tag">-10%</span>
-      </div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  </div>
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80" alt="Wool Blazer">
+                <span class="badge badge-sale">SALE</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <p class="category">Outerwear</p>
+                <h4>Wool Blazer</h4>
+                <div class="price-row">
+                  <span class="current-price">$50.00</span>
+                  <span class="old-price">$55.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
 
-  <div class="product-card">
-    <div class="product-img">
-      <img src="#" alt="Cotton Shirt" />
-      <span class="badge-sale">NEW</span>
-    </div>
-    <div class="product-info">
-      <h4>Cotton Shirt</h4>
-      <div class="price-row">
-        <span class="current-price">$30</span>
-      </div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  </div>
+            <div class="product-card">
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&q=80" alt="Cotton Shirt">
+                <span class="badge badge-new">NEW</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <p class="category">Tops</p>
+                <h4>Cotton Shirt</h4>
+                <div class="price-row">
+                  <span class="current-price">$30.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
 
-  <div class="product-card">
-    <div class="product-img">
-      <img src="#" alt="Leather Boots" />
-    </div>
-    <div class="product-info">
-      <h4>Leather Boots</h4>
-      <div class="price-row">
-        <span class="current-price">$120</span>
-      </div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  </div>
+            <div class="product-card">
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=500&q=80" alt="Leather Boots">
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <p class="category">Footwear</p>
+                <h4>Leather Boots</h4>
+                <div class="price-row">
+                  <span class="current-price">$120.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
 
-  <div class="product-card">
-    <div class="product-img">
-      <img src="#" alt="Denim Jacket" />
-      <span class="badge-sale">SALE</span>
-    </div>
-    <div class="product-info">
-      <h4>Denim Jacket</h4>
-      <div class="price-row">
-        <span class="current-price">$75</span>
-        <span class="old-price">$90</span>
-      </div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  </div>
-</div>
+            <div class="product-card">
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=500&q=80" alt="Denim Jacket">
+                <span class="badge badge-sale">-15%</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-info">
+                <p class="category">Outerwear</p>
+                <h4>Denim Jacket</h4>
+                <div class="price-row">
+                  <span class="current-price">$75.00</span>
+                  <span class="old-price">$90.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
 
           <div class="pagination">
-            <button class="page-btn">Back</button>
+            <button class="page-btn"><i class="fa-solid fa-arrow-left"></i></button>
             <span class="page-num">1</span>
             <span class="page-num active">2</span>
             <span class="page-num">...</span>
-            <span class="page-num">9</span>
             <span class="page-num">10</span>
-            <button class="page-btn">Next</button>
+            <button class="page-btn"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </section>
       </div>
@@ -167,63 +202,59 @@
 
   <section class="newsletter-section">
     <div class="newsletter-content">
-      <h2>STAY UP TO DATE ABOUT OUR BEST OFFERS!</h2>
+      <div class="newsletter-text">
+        <h2>Join Our Community</h2>
+        <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+      </div>
       <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email address..." />
-        <button class="subscribe-btn">Subscribe to Newsletter</button>
+        <input type="email" placeholder="Enter your email address...">
+        <button class="subscribe-btn">Subscribe</button>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="titles">
+    <div class="footer-container">
+      <div class="footer-column brand-col">
+        <img src="./assets/main-logo/logo-buga.png" alt="BugaLab Studio" class="footer-logo">
+        <p>Creating elegant and timeless fashion pieces for the modern individual.</p>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
       <div class="footer-column">
-        <h3>SHOP</h3>
-        <br />
+        <h3>Shop</h3>
         <ul>
           <li><a href="#">Dresses</a></li>
           <li><a href="#">Jackets</a></li>
           <li><a href="#">Skirts</a></li>
           <li><a href="#">Shoes & Bags</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="#">Sales & Offers</a></li>
         </ul>
       </div>
-
       <div class="footer-column">
-        <h3>INFORMATION</h3>
-        <br />
+        <h3>Information</h3>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
           <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Delivery and Return</a></li>
+          <li><a href="#">Delivery & Returns</a></li>
         </ul>
       </div>
-
       <div class="footer-column">
-        <h3>CUSTOMER SUPPORT</h3>
-        <br />
+        <h3>Support</h3>
         <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help Center</a></li>
           <li><a href="#">FAQ</a></li>
+          <li><a href="#">Size Guide</a></li>
         </ul>
       </div>
-
-      <div class="footer-column">
-        <h3>SOCIAL-MEDIA</h3>
-        <br />
-        <div class="social-media">
-          <ul>
-            <a class="social-media-icons" href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a class="social-media-icons" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a class="social-media-icons" href="https://tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-          </ul>
-        </div>
-      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BugaLab Studio. All rights reserved.</p>
     </div>
   </footer>
 </body>
-
 </html>
